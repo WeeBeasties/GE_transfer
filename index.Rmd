@@ -1,0 +1,72 @@
+---
+title       : Transfer Credit Trends
+subtitle    : General Education at Ferris State University
+author      : Dr. Clifton Franklund
+job         : General Education Coordinator
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+logo        : icon.png
+--- 
+## Coursera Data Products Assignment
+
+- This document explains the function of my Shiny app
+- All of the tables and figures in these slides are generated using R
+- This project was created to satisfy the project requirements for the Data Products course in the Coursera Data Science track
+
+--- &twocol
+## Background
+
+*** =left
+
+1. The number of transfer students is increasing at Ferris State University
+2. More students are transferring General Education credits than before
+3. The number of General Education courses is beginning to decrease as a consequence
+4. We need to understand this phenomenon better in order to react constructively
+
+*** =right
+
+```{r Head count, echo=FALSE, fig.width=6}
+library(ggplot2)
+headcount  <- c(1239,1145,1330,1301,1382,1645,1489,1597,1677,1908,1868,1813,1839,1866)
+year <- c(2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014)
+data <- data.frame(year=year, headcount=headcount)
+ggplot(data, aes(x=year, y=headcount)) +
+        xlim(2000, 2015) +
+        geom_point(size=4, shape=21, fill="white") +
+        geom_smooth(method='lm', size=1, color="darkgray")+
+        ggtitle("Number of Transfer Students Over Time\n") +
+        xlab("\nYear") +
+        ylab("Total Number of Transfer Students\n")
+```
+
+--- &twocol 
+## Courses Evaluated
+
+*** =left
+
+1. The number top 20 courses for transfers were identified
+2. 10 of these are core General Education courses
+3. These 10 fell into five different programs
+4. The actual numbers are shown to the right. Percent is the percentage of all transfer credits in this time period.
+
+*** =right
+
+```{r top, echo=FALSE, results='asis'}
+library(xtable)
+data <- read.csv("top.csv")
+table <- xtable(data, row.names=NULL)
+print(table, type="html")
+```
+
+--- .class #id
+
+## The Data Product in Action
+
+<iframe src="http://franklund.shinyapps.io/shiny-transfers"></iframe>
+
+
+

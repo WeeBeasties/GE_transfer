@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transfer Credit Trends</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Transfer Credit Trends">
+  <meta name="author" content="Dr. Clifton Franklund">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="assets/img/icon.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Transfer Credit Trends</h1>
+    <h2>General Education at Ferris State University</h2>
+    <p>Dr. Clifton Franklund<br/>General Education Coordinator</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Coursera Data Products Assignment</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>This document explains the function of my Shiny app</li>
+<li>All of the tables and figures in these slides are generated using R</li>
+<li>This project was created to satisfy the project requirements for the Data Products course in the Coursera Data Science track</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Background</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ol>
+<li>The number of transfer students is increasing at Ferris State University</li>
+<li>More students are transferring General Education credits than before</li>
+<li>The number of General Education courses is beginning to decrease as a consequence</li>
+<li>We need to understand this phenomenon better in order to react constructively</li>
+</ol>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="assets/fig/Head%20count-1.png" alt="plot of chunk Head count"> </p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Courses Evaluated</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ol>
+<li>The number top 20 courses for transfers were identified</li>
+<li>10 of these are core General Education courses</li>
+<li>These 10 fell into five different programs</li>
+<li>The actual numbers are shown to the right. Percent is the percentage of all transfer credits in this time period.</li>
+</ol>
+
+</div>
+<div style='float:right;width:48%;'>
+  <!-- html table generated in R 3.1.1 by xtable 1.7-4 package -->
+
+<!-- Tue Jan 20 17:26:25 2015 -->
+
+<table border=1>
+<tr> <th>  </th> <th> Course </th> <th> Total </th> <th> Percent </th>  </tr>
+  <tr> <td align="right"> 1 </td> <td> ENGL150 </td> <td align="right"> 34147.29 </td> <td align="right"> 3.35 </td> </tr>
+  <tr> <td align="right"> 2 </td> <td> ENGL250 </td> <td align="right"> 27793.07 </td> <td align="right"> 2.73 </td> </tr>
+  <tr> <td align="right"> 3 </td> <td> PSYC150 </td> <td align="right"> 25159.67 </td> <td align="right"> 2.47 </td> </tr>
+  <tr> <td align="right"> 4 </td> <td> MATH115 </td> <td align="right"> 20859.94 </td> <td align="right"> 2.05 </td> </tr>
+  <tr> <td align="right"> 5 </td> <td> MATH110 </td> <td align="right"> 17394.46 </td> <td align="right"> 1.71 </td> </tr>
+  <tr> <td align="right"> 6 </td> <td> SOCY121 </td> <td align="right"> 15631.27 </td> <td align="right"> 1.54 </td> </tr>
+  <tr> <td align="right"> 7 </td> <td> COMM121 </td> <td align="right"> 15532.91 </td> <td align="right"> 1.53 </td> </tr>
+  <tr> <td align="right"> 8 </td> <td> PLSC121 </td> <td align="right"> 15199.37 </td> <td align="right"> 1.49 </td> </tr>
+  <tr> <td align="right"> 9 </td> <td> BIOL103 </td> <td align="right"> 8465.97 </td> <td align="right"> 0.83 </td> </tr>
+  <tr> <td align="right"> 10 </td> <td> COMM105 </td> <td align="right"> 8271.72 </td> <td align="right"> 0.81 </td> </tr>
+   </table>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>The Data Product in Action</h2>
+  </hgroup>
+  <article data-timings="">
+    <iframe src="http://franklund.shinyapps.io/shiny-transfers"></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Coursera Data Products Assignment'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Background'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Courses Evaluated'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='The Data Product in Action'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
