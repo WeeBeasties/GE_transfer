@@ -1,7 +1,7 @@
 ## GE_transfer
 Exploration of transfer credit trends in some General Education courses at Ferris State University. This repo contains a variety of files that I use to explore this issue and present the finding of my analysis. Those files are briefly identified below:
 
-_bigTable.csv_	- a data file of the transfer credits by year, semester, and program (I generated this from a large database using an R script prior to this analysis).  
+**bigTable.csv**	- a data file of the transfer credits by year, semester, and program (I generated this from a large database using an R script prior to this analysis).  
 
 _index.Rmd_	My slidify slide deck for the project.  
 
